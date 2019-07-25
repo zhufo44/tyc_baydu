@@ -1,0 +1,11 @@
+
+
+每个token请求1500个左右的公司，就会达到账号上限，账号被封24小时，24小时之后又可以使用
+
+token队列：
+    tyc_author_all ：存储所有author 是 1，2，3的总和
+    tyc_author_1 ：存储还未使用的token
+    tyc_author_2 ：存储正在使用的token
+    tyc_author_3 ：存储 请求上限的 账号
+
+
