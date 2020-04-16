@@ -16,7 +16,7 @@ def conRedis():
 redis_client = conRedis()
 def getip():
     ip = redis_client.brpop('tianyan_proxy',0)[1].decode('utf8')
-    proxy = {"http": "http://pig444:1234as@"+ip,"https": "https://pig444:1234as@"+ip}
+    proxy = {"http": "http://user:passwd@"+ip,"https": "https://user:passwd@"+ip}
     # proxy = {"http": 'http://' + ip, "https": 'https://' + ip}
     print('ip地址：', ip)
     return proxy
