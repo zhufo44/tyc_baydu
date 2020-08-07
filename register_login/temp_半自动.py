@@ -12,7 +12,7 @@ def get_token():
     input('调整输入法')
     while True:
         if d(className="android.widget.EditText").exists:
-            d(className="android.widget.EditText").set_text('厦门思汉信息科技有限公司')
+            d(className="android.widget.EditText").set_text('哈哈')
             break
 
     # 搜索
